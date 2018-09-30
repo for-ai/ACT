@@ -24,7 +24,7 @@ Call `pip install -r requirements.txt` to install all dependencies.
 ### Sample Call
 The settings for the reader used is passed as flag. For example, to run the parity task, call:
 ```
-python -m atavus.train --model=act --hparam_sets=act_parity  --output_dir=runs/act_parity --data=parity  --train_steps=100000
+python -m ACT.train --model=act --hparam_sets=act_parity  --output_dir=runs/act_parity --data=parity  --train_steps=100000
 ```
 
 
