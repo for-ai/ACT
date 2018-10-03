@@ -35,6 +35,10 @@ python -m ACT.train --model=act --hparam_sets=act_parity  --output_dir=runs/act_
 | Sort | ![sort_acc](./results/sort_acc.png) | ![sort_ser](./results/sort_ser.png) | ![sort_ponder](./results/sort_ponder.png) |
 | Addition | ![add_acc](./results/add_acc.png) | ![add_ser](./results/add_ser.png) | ![add_ponder](./results/add_ponder.png) |
 
+- ![#0d6306](https://placehold.it/15/0d6306/000000?text=+) Our ponder cost
+- ![#00e5ff](https://placehold.it/15/00e5ff/000000?text=+) LSTM cell
+- ![#001289](https://placehold.it/15/001289/000000?text=+) Original ponder cost
+
 Results for parity, sort and addition tasks are displayed. Light blue color represents LSTM cell, dark blue represents ACT cell with old ponder cost and green represents ACT cell with our new ponder cost.
 
 The model with the new ponder cost ponders comparatively more than the model with the original ponder cost. The ACT cell with new ponder cost performed better than the old ponder cost for parity task, though performed similarly for sort and addition tasks.
