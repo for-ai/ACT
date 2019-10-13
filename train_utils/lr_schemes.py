@@ -119,7 +119,6 @@ def warmup_exponential_decay(params):
 
 @register("cosine")
 def cosine_annealing(params):
-
   gs = tf.train.get_or_create_global_step()
   gs = tf.minimum(gs, params.learning_rate_cosine_cycle_steps)
   cosine_decay = 0.5 * (1 + tf.cos(
